@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.w100{
+    width: 100%;
+}
+.w90{
+    width: 90%;
+}
+.w75{
+    width: 75%;
+}
+.w50{
+    width: 50%;
+}
+.w25{
+    width: 25%;
+}
+.gallery{
+    border: 1px solid rgb(199, 196, 196);
+    height: 400px;
+    position: relative;
+    float: left;
+    display: block;
+    text-align: center;
+}
+.gallery img{
+    width: 474px;
+    height: 350px;    
+    left: 0;    
+}
+.gallery:hover{
+    border: 1px solid black;
+}
+.content{
+    font-size: 1em;      
+}
+@media only screen and (min-width: 700px) {
+    /* For PC-laptop: */
+    .gallery{
+        border: 1px solid rgb(199, 196, 196);
+        height: 400px;
+        position: relative;
+        float: left;
+        display: block;
+        text-align: center;
+    }
+    .gallery img{
+        width: 100%;
+        height: 350px;    
+        left: 0;    
+    }
+    .gallery:hover{
+        border: 1px solid black;
+    }
+}
+@media only screen and (max-width: 700px) {
+    /* For mobile tablet: */
+    .gallery{
+        border: 1px solid rgb(199, 196, 196);
+        height: 300px;
+        width: 50%;
+        position: relative;
+        float: left;
+        display: block;
+        text-align: center;
+    }
+    .gallery img{
+        width: 100%;
+        height: 85%;    
+        left: 0;    
+    }
+    .gallery:hover{
+        border: 1px solid black;
+    }
+}
+@media only screen and (max-width: 500px) {
+    /* For mobile */
+    .gallery{
+        border: 1px solid rgb(199, 196, 196);
+        height: 300px;
+        width: 100%;
+        position: relative;
+        float: left;
+        display: block;
+        text-align: center;
+    }
+    .gallery img{
+        width: 100%;
+        height: 85%;    
+        left: 0;    
+    }
+    .gallery:hover{
+        border: 1px solid black;
+    }
+}
